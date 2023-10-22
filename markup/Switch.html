@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p class="info"> Write Mum, Dad and Siblings in the input field and click the button.</p>
+<p>The switch statement will execute a block of code based on your input.</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Click on it</button>
+
+<p id="demo"></p>
+<style>
+
+  .info{
+    margin-top: 30px;
+  }
+
+  input{
+    background-color:antiquewhite;
+  }
+
+</style>
+
+<script>
+function myFunction() {
+  var text;
+  var families = document.getElementById("myInput").value;
+
+  switch(families) {
+    case "Mum":
+      text = "Yah Allah bless my mum, and grant her a high place in jannah!.";
+    break;
+    case "Dad":
+    text = "My dad is late. Yah Allah have mercy on him and forgive his shotcomings!.";
+    break;
+    case "Siblings":
+    text = "Yah robb! My siblings are other parts of me, Be with them and make guidance easy for them.";
+    break;
+    default:
+    text = "Not included!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

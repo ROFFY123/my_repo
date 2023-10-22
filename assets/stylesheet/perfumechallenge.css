@@ -1,0 +1,146 @@
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+   .container{
+    display: grid; 
+    height: 100vh; 
+   background-color:hsl(30, 38%, 92%);
+    grid-template-columns: 1fr;
+    /* max-width: 70vw; */
+  }
+
+ .sub-container{
+  background-color: hsl(0, 0%, 100%);
+  min-height: 50vh;
+  max-width: 300px;
+  margin: 30px 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  }
+
+  .img img{
+    height: 300px;
+    width: 340px;
+  }
+
+  .details{
+    margin: 0 30px;
+  }
+
+  .perf{
+    margin-top: 30px;
+    color:hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family:  'Outfit', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500, 700;
+  }
+
+  h1{
+    color: hsl(212, 21%, 14%);
+    margin-top: 20px;
+    font-family: 'Big Shoulders Display', cursive; 
+    font-family: 'Fraunces', serif; 
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+     font-family: 'Outfit', sans-serif; 
+    font-weight: 700;
+  }
+
+  .uses{
+    margin-top: 30px;
+    color:hsl(228, 12%, 48%);
+    font-size: 16px;
+    font-family:  'Outfit', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500, 700;
+  }
+
+  .price{
+    display: flex;
+    gap: 45px;
+    margin-top: 15px;
+    align-items: center;
+
+  }
+
+.bold{
+  color: hsl(158, 36%, 37%);
+  font-weight: 800;
+  font-size: 40px;
+}
+
+
+svg{
+  margin-right: 10px;
+}
+
+   
+
+  button{
+   color: white; 
+    background-color: hsl(158, 36%, 37%); 
+    width: 300px;
+    height: 40px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+  }       
+
+
+@media screen and (min-width:375px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+   body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: hsl(30, 38%, 92%);
+   min-height: 100vh;
+   font-family: 'Montserrat', sans-serif;
+  } 
+
+   /* .container{
+   overflow: hidden;
+  }  */
+
+ .sub-container{
+   display: flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 700px;
+    display: grid;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;  
+    /* max-height: 600px; */
+    }
+
+    .img img{
+      height: 500px;
+      max-width: 350px;
+      /* overflow: hidden; */
+    } 
+
+    .details{
+      display: grid;
+      margin: 20px 20px;
+     
+    }  
+  
+}
+
+ 

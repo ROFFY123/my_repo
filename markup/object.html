@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+    
+    <script>  
+      const user = {
+  name: ["Bob", "Smith"],
+  age: 32
+ }
+ console.log(user);
+ 
+/////////////
+ const person = {
+  name: ["Bob", "Smith"],
+  age: 32,
+  bio() {
+    console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+  },
+  introduceSelf() {
+    console.log(`Hi! I'm ${this.name[0]}.`);
+  },
+};
+ console.log(person)
+ //////////////
+
+ /////////////////
+ const person1 = {
+  name: "Chris",
+  introduceSelf() {
+    console.log(`Hi! I'm ${this.name}.`);
+  },
+};
+console.log(person1)
+// ///////////
+
+////////////////
+ const person2 = {
+  name: "Bayo",
+  introduceSelf() {
+    console.log(`${this.name}`)
+  }
+ }
+  console.log(person2)
+  ///////////////
+
+  const person3 = {
+  name: "Yinka",
+  introduceSelf() {
+    console.log(`${person.name}`)
+  }
+ }
+  console.log(person3)
+
+  //  test1
+  // let catName = ['Bertie'];
+// cat.greeting();
+// cat.color = "black";
+// test1
+
+
+
+// test2
+bandInfo = {
+name: 'The light',
+nationality: 'Nigeria',
+genre: 'Halal music',
+members: 4,
+formed: '3years',
+split: false,
+albums: [
+name = 'Yah robb', released = 2020,
+name = 'My mother', released = 2021
+],
+bio: 'The official name of this band is called the light, we are based in Nigeria, we have been active since 2years ago, we engage in different types of halal music, we released our first album in the year 2020 which is tittled "yah Robb", and also our second album was released in the year 2021 titled "My mother".'
+}
+// test2
+
+
+// const cat1 = {
+//   name : 'Bertie',
+//   breed : 'Cymric',
+//   color : 'white',
+//   greeting: function() {
+//     console.log(`Hello, said ${this.name} the ${this.color} ${this.breed}`);
+//   }
+// }
+
+// cat1.greeting();
+
+ function Cat(name, breed){
+  this.name = name;
+  this.breed = breed;
+  this.greeting = function() {
+    console.log(`Hello, said ${this.name} the ${this.breed}`);
+  }
+ }
+
+  const cat1 = new Cat("Bertie","Cymric");
+  cat1.greeting();
+
+  const cat2 = new Cat("Lora","Musun");
+  cat2.greeting();
+
+
+   //////////////
+  class Info{
+    constructor(name, school){
+      this.name = name;
+      this.school = school;
+      this.greeting = function(){
+        console.log(`My name is ${this.name}, I attended ${this.school}`)
+      }
+    }
+  }
+
+  const info = new Info("Yinka", "Oxford international school.");
+  info.greeting();
+
+  const info2 = new Info("khodijah", "Foliage model school.");
+  info2.greeting();
+    //////////////
+
+
+    class Animal {
+  sleep() {
+    console.log("zzzzzzz");
+  }
+}
+
+const animal = new Animal();
+
+animal.sleep(); 
+
+
+function replaceAWithE(str){
+  return str.replace(/[a]/ig, 'e');
+}
+
+console.log(replaceAWithE('Africa'));
+
+// clg(replaceAWithE('africa'))
+
+
+__defineGetter__
+__defineSetter__
+__lookupGetter__
+__lookupSetter__
+__proto__
+city
+constructor
+greet
+hasOwnProperty
+isPrototypeOf
+propertyIsEnumerable
+toLocaleString
+toString
+valueOf
+object.toString();
+clg(object.toString);
+
+
+class Shape {
+
+name;
+sides;
+sideLength;
+
+constructor (name, sides, sideLength){
+ this.name = name,
+ this.sides = sides,
+ this.sideLength = sideLength
+}
+calcPerimeter(){
+let perimeter = this.sideLength * this.sides
+console.log(perimeter)
+}
+
+}
+const square = new Shape("square", 4, 5)
+square.calcPerimeter();
+
+const triangle = new Shape("triangle", 3, 3)
+triangle.calcPerimeter();
+
+
+
+
+
+
+class Shape {
+
+name;
+sides;
+sideLength;
+
+constructor (name, sides, sideLength){
+ this.name = name,
+ this.sides = sides,
+ this.sideLength = sideLength
+}
+calcPerimeter(){
+let perimeter = this.sideLength * this.sides
+console.log(perimeter)
+}
+
+}
+
+const square = new Shape("square", 4, 5)
+square.calcPerimeter();
+
+class Square extends Shape{
+calcArea(){
+let Area = this.sides*2
+console.log(calcArea)
+}
+constructor(name = square, sides = 4,  ){
+super (name = square, sides = 4)
+}
+}
+const shape = new Square("square", 4)
+square.calcPerimeter()
+
+    </script>
+  </body>
+  class Shape {
+
+    name;
+    sides;
+    sideLength;
+  
+    constructor (name, sides, sideLength){
+     this.name = name,
+     this.sides = sides,
+     this.sideLength = sideLength
+  }
+  calcPerimeter(){
+   let perimeter = this.sideLength * this.sides
+  console.log(perimeter)
+  }
+    
+  }
+   class Square extends Shape{
+     constructor(name = 'square', sides = 4, sidelength = 0){
+   this.name = name,
+   this.sides = sides,
+   this.sideLength = sideLength
+  }
+    calcArea(){
+   let area = this.sides * this.sides
+  }
+  }
+</html>

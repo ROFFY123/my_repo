@@ -9,7 +9,7 @@
 }  */
 
 
-@media screen and (max-width:375px){
+/* @media screen and (max-width:375px){ */
 
   .container{
     display: grid; 
@@ -81,6 +81,7 @@
  background-color:  hsl(31, 77%, 52%);
  border-top-left-radius: 10px;
  border-top-right-radius: 10px;
+ padding: 1rem;
  
 
   }
@@ -94,12 +95,12 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   } 
-}
+/* } */
 
 
 
 
-  @media screen and (min-width:1440px){
+  @media screen and (min-width:352px){
 
   .container{
     display: grid; 
